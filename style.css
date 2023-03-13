@@ -1,0 +1,175 @@
+/* == RESET == */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 100%;
+
+  background-color: rgba(245, 245, 245, 1);
+}
+
+/* == LOGIN == */
+
+#login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  row-gap: 15px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #c5c5c5;
+  border-radius: 10px;
+
+  padding: 50px;
+  padding-top: 30px;
+}
+
+#login .inputWrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  min-width: 200px;
+  width: 40vw;
+  max-width: 80vw;
+
+  border-bottom:  1px solid #C5C5C5;
+}
+
+#login .inputWrapper input {
+  width: 100%;
+  height: 100%;
+
+  padding: 20px 15px;
+  padding-left: 60px;
+
+  border: none;
+  border-bottom: 1px solid #C5C5C5;
+}
+
+#login .inputWrapper select {
+  width: 100%;
+  height: 100%;
+
+  padding: 20px 15px;
+  padding-left: 60px;
+
+  background: URL("./img/arrow.png");
+  background-position: right 1rem center;
+  background-size: 1rem;
+  background-repeat: no-repeat;
+
+  border: none;
+  border-bottom: 1px solid #C5C5C5;
+
+  appearance: none;
+}
+
+#login .inputWrapper .imageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 39px;
+  height: 100%;
+
+  padding-left: 15px;
+}
+
+#login .inputWrapper .imageWrapper img {
+  width: 24px;
+}
+
+#login .links {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin-top: 20px;
+}
+
+#login .links a {
+  color: #606060;
+
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+/* == GERAL == */
+
+
+header {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+  width: 100%;
+  min-height: 52px;
+
+  padding: 10px 30px;
+
+  background-color: rgba(102, 204, 153, 1);
+
+  z-index: 2;
+}
+
+header .logoWrapper {
+  display: flex;
+
+  column-gap: 20px;
+}
+
+header .accountWrapper {
+  display: flex;
+  align-items: center;
+
+  column-gap: 10px;
+}
+
+header .accountWrapper #accountMenuIcon {
+  padding: 0 10px;
+  border-right: 1px solid #F5F5F5;
+}
+
+header .accountWrapper h3 {
+  color: #F5F5F5;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+header .accountWrapper #profilePicture {
+  border-radius: 50%;
+}
